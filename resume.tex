@@ -12,6 +12,14 @@
 % adjust the page margins
 \usepackage[scale=0.9]{geometry}
 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,    % Set to true to enable links without colors
+    linkcolor=black,    % Set link color to black
+    filecolor=black,    
+    urlcolor=black,
+}
+
 % personal data
 \name{Vincent}{Chen}
 \phone[mobile]{(984) 209-8259}
@@ -28,10 +36,10 @@ Highly motivated Software Engineer at Google Photos with 3+ years of experience 
 
 \section{Experience}
 
-\cventry{Aug 2022 -- Present}{Software Engineer, AI \& Mobile}{Google}{Mountain View, CA}{}{
+\cventry{Jul 2022 -- Present}{Software Engineer, AI \& Mobile}{Google}{Mountain View, CA}{}{
     \begin{itemize}
-        \item Led development of "Ask Photos" (Gemini LLM), enabling natural language search for photos and insights (millions of daily users).
-        \item Implemented "Photo Stack" (computer vision), reducing gallery clutter by 33% for 1B+ users.
+        \item Led development of "Ask Photos" (Gemini LLM) \href{https://techcrunch.com/2024/05/14/google-photos-introduces-an-ai-search-feature-ask-photos/}{(link)}, enabling natural language search for photos and insights (millions of daily users).
+        \item Implemented "Photo Stack" (computer vision) \href{https://techcrunch.com/2023/11/15/google-photos-turns-to-ai-to-organize-and-categorize-your-photos-for-you/}{(link)}, reducing gallery clutter by 33\% for 1B+ users.
         \item Leveraged OCR and categorization models for automatic organization of screenshots/documents, significantly improving productivity. 
         \item Optimized LLM performance via prompt evaluations, conversation analysis, and collaboration with AI teams.
     \end{itemize}}
@@ -58,9 +66,9 @@ Highly motivated Software Engineer at Google Photos with 3+ years of experience 
 
 \section{Projects}
 
-\cventry{}{Transformer Models (ML Engineer)}{}{}{}{
+\cventry{}{Distributed Training and Fine-tuning of a Custom Transformer Model (Outperformed GPT-3 on HellaSwag)}{}{}{}{
     \begin{itemize}
-        \item Designed a decoder-only transformer model with 124M parameters  from scratch (DDP, 8 NVIDIA H100 GPUs). Surpassing GPT-3 on HellaSwag. Fine-tuned with instruction data to enhance performance on various NLP tasks.
+        \item Designed and trained a 124M parameter decoder-only transformer from scratch, outperforming GPT-3 on HellaSwag. Utilized the FineWeb dataset and distributed training (DDP, 8 NVIDIA H100 GPUs) to accelerate training.
     \end{itemize}}
 
 \section{Skills}
