@@ -22,7 +22,6 @@
 
 % personal data
 \name{Vincent}{Chen}
-\phone[mobile]{(984) 209-8259}
 \email{zhong\_chen233@gmail.com}
 \social[linkedin]{zihong-chen}
 \social[github]{zihongchen}
@@ -38,11 +37,18 @@ Highly motivated Software Engineer at Google Photos with 3+ years of experience 
 
 \cventry{Jul 2022 -- Present}{Software Engineer, AI \& Mobile}{Google}{Mountain View, CA}{}{
     \begin{itemize}
-        \item Led development of "Ask Photos" (Gemini LLM) \href{https://techcrunch.com/2024/05/14/google-photos-introduces-an-ai-search-feature-ask-photos/}{(link)}, enabling natural language search for photos and insights (millions of daily users).
-        \item Implemented "Photo Stack" (computer vision) \href{https://techcrunch.com/2023/11/15/google-photos-turns-to-ai-to-organize-and-categorize-your-photos-for-you/}{(link)}, reducing gallery clutter by 33\% for 1B+ users.
-        \item Leveraged OCR and categorization models for automatic organization of screenshots/documents, significantly improving productivity. 
-        \item Optimized LLM performance via prompt evaluations, conversation analysis, and collaboration with AI teams.
+        \item Developed "Ask Photos," an multimodal AI agent enabling users to search photos by chatting\href{https://techcrunch.com/2024/05/14/google-photos-introduces-an-ai-search-feature-ask-photos/}{\textit{(TechCrunch article)}}.
+            \begin{itemize}
+                \item Built responsive, ChatGPT-like streaming interface (gRPC) for seamless Android client interaction.
+                \item Collaborated with DeepMind to optimized agent performance through prompt engineering, fine-tuning, and model evaluations.
+            \end{itemize}
+        \item Spearheaded development of "Photo Stack", which groups similar photos using computer vision, reducing gallery clutter by 33\% for 1B+ users\href{https://techcrunch.com/2023/11/15/google-photos-turns-to-ai-to-organize-and-categorize-your-photos-for-you/}{\textit{(TechCrunch article)}}
+            \begin{itemize}
+                \item Tackled the engineering challenge of delivering fast performance on low-end Android devices through optimized data access (SQLite), SQL query optimization, performance profiling, caching, prefetching, and lazy loading. 
+            \end{itemize}
+        \item Led redesign of Google Photos settings (Material Design 3), significantly enhancing UX and streamlining navigation. Rebuilt core components (developer tools, sharing, privacy, etc.) for improved maintainability and performance.
     \end{itemize}}
+
 
 \cventry{Jan 2023 -- Jun 2023}{Founder \& AI Engineer}{StarAI}{San Francisco, CA}{}{
     \begin{itemize}
@@ -73,10 +79,8 @@ Highly motivated Software Engineer at Google Photos with 3+ years of experience 
 
 \section{Skills}
 \cvitem{AI/ML}{LLMs, RAG, Agents, PyTorch, Prompt Engineering, Fine-tuning, LangChain, Pinecone, RLHF}
-\cvitem{Mobile}{Android (Java, Kotlin, Jetpack Compose, MVVM, SQL, Dagger, Espresso Testing)}
-\cvitem{Backend}{Python, Node.js, Flask, Django, MongoDB, MySQL}
-\cvitem{Infrastructure}{Docker, Kubernetes, Azure}
-\cvitem{Other}{Java, JavaScript, SQL, CI/CD}
+\cvitem{Mobile/Backend}{Android, Java, Kotlin, Jetpack Compose, MVVM, Coroutine, Python, Node.js, Flask, Django}
+\cvitem{Data \& Infrastructure}{SQL, MongoDB, MySQL, Docker, Kubernetes, Azure, CI/CD}
 
 \section{Education}
 
