@@ -1,0 +1,78 @@
+%!TEX TS-program = xelatex
+\documentclass[11pt,a4paper,sans]{moderncv}
+\usepackage[scale=0.9]{geometry}
+
+% moderncv themes
+\moderncvstyle{banking} 
+\moderncvcolor{blue} 
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+
+% personal data
+\name{Vincent}{Chen}
+\phone[mobile]{(984) 209-8259}
+\email{zhong\_chen233@gmail.com}
+\homepage{linkedin.com/in/zhong-chen}
+
+\begin{document}
+\makecvtitle
+
+\section{Summary}
+
+Highly motivated Software Engineer at Google Photos with 3+ years of experience building AI-powered products impacting billions of users.  Expertise in LLMs, full-stack mobile development (Android), and backend technologies.
+
+\section{Experience}
+
+\cventry{Aug 2022 -- Present}{Software Engineer, AI \& Mobile}{Google}{Mountain View, CA}{}{
+\begin{itemize}
+    \item Led development of "Ask Photos," a feature powered by Gemini LLM, enabling natural language search for photos and insights (used by millions daily).
+    \item Implemented "Photo Stack" using computer vision, reducing gallery clutter by 33% for 1B+ users.
+    \item Leveraged OCR and categorization models to automatically organize screenshots and documents, significantly improving user productivity.
+    \item Optimized LLM performance by conducting prompt evaluations, analyzing conversation histories, and collaborating with AI teams.
+\end{itemize}}
+
+\cventry{Jan 2023 -- Jun 2023}{Founder \& AI Engineer}{StarAI}{San Francisco, CA}{}{
+\begin{itemize}
+    \item Founded and led an AI startup to build autonomous AI agents that clone celebrities' voices and personas, leveraging LLMs, LangChain, Pinecone, and prompt engineering.
+    \item Partnered with a celebrity (5M+ followers), growing a dedicated community of 1,000+ members.
+    \item Led a team of top engineers (Google, Meta, Forbes 30 Under 30) to develop and scale the AI platform.
+    \item Architected a fully asynchronous platform capable of handling 500,000 concurrent users, ensuring stability during peak traffic.
+\end{itemize}}
+
+\cventry{May 2021 -- Aug 2021}{Big Data Engineer Intern}{Amazon}{Jersey City, NJ}{}{
+\begin{itemize}
+    \item Revamped data infrastructure for a compliance service used by 1,200+ teams, loading 22 billion records from diverse sources into Redshift.
+    \item Optimized Redshift schema by 45%, automated reporting, and achieved over \$800,000 in annual savings.
+\end{itemize}}
+ 
+\section{Projects}
+
+\cventry{}{PeerTalent (AI Engineer & Tech Lead)}{}{}{}{
+\begin{itemize}
+    \item Led a team of 7 to build an AI platform that analyzes peer reviews and video interviews to rank job candidates.
+    \item Designed backend APIs, ranking algorithms, and utilized LLMs for resume evaluation.
+\end{itemize}}
+
+\cventry{}{Transformer Models (ML Engineer)}{}{}{}{
+\begin{itemize}
+    \item Trained a GPT-3 model from scratch using DDP and 8 NVIDIA H100 GPUs.
+    \item Fine-tuned GPT-3 using instruction data to enhance performance on various NLP tasks.
+\end{itemize}}
+
+\section{Skills}
+
+\cvitem{AI/ML}{LLMs (Gemini, GPT-3), PyTorch, TensorFlow, LangChain, Pinecone, FAISS, OpenAI API, RLHF, Prompt Engineering}
+\cvitem{Mobile}{Android (Kotlin, Jetpack Compose, MVVM, Dagger, Testing)}
+\cvitem{Backend}{Python, Node.js, Flask, Django, MongoDB, PostgreSQL, API Design, Serverless}
+\cvitem{Infrastructure}{Docker, Kubernetes, AWS, GCP}
+\cvitem{Other}{Java, JavaScript, SQL, CI/CD}
+
+\section{Education}
+
+\cventry{May 2022}{B.S. Computer Science; B.S. Business Administration}{University of North Carolina at Chapel Hill}{}{}{}
+
+\end{document}
