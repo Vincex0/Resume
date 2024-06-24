@@ -1,6 +1,6 @@
 %!TEX TS-program = xelatex
 \documentclass[11pt,a4paper,sans]{moderncv}
-\usepackage[scale=0.9]{geometry}
+\usepackage[scale=0.93]{geometry}
 
 % moderncv themes
 \moderncvstyle{banking} 
@@ -29,34 +29,30 @@
 \begin{document}
 \makecvtitle
 
-\section{Summary}
-
-Software Engineer specializing in LLM-powered applications with a proven track record of delivering impactful mobile and AI products to billions of users.
-
 \section{Experience}
 
-\cventry{Jul 2022 -- Present}{Software Engineer, Mobile \& AI}{Google}{Mountain View, CA}{}{
+\cventry{Jul 2022 -- Present}{Software Engineer, Android \& AI}{Google Photos}{Mountain View, CA}{}{
     \begin{itemize}
-        \item Developed "Ask Photos," a multimodal AI agent enabling users to search photos by chatting \underline{\href{https://techcrunch.com/2024/05/14/google-photos-introduces-an-ai-search-feature-ask-photos/}{(TechCrunch article)}}.
+        \item Developed "Ask Photos," a multimodal AI agent enabling users to search photos by chatting \underline{\href{https://techcrunch.com/2024/05/14/google-photos-introduces-an-ai-search-feature-ask-photos/}{(TechCrunch)}}.
             \begin{itemize}
-                \item Built responsive, ChatGPT-like streaming interface (gRPC) for seamless Android client interaction.
+                \item Built responsive, ChatGPT-like streaming interface using Kotlin,  Coroutines, Jetpack Compose, Dagger/Hilt, MVVM. 
                 \item Collaborated with DeepMind to optimize agent performance through prompt engineering, fine-tuning, and model evaluation.
             \end{itemize}
-        \item Spearheaded development of "Photo Stack," a computer vision feature that groups similar photos, reducing gallery clutter by 33\% for 1B+ users \underline{\href{https://techcrunch.com/2023/11/15/google-photos-turns-to-ai-to-organize-and-categorize-your-photos-for-you/}{(TechCrunch article)}}.
+        \item Led development of "Photo Stack," which groups similar photos and reduces gallery clutter by 33\% for 1B+ users \underline{\href{https://techcrunch.com/2023/11/15/google-photos-turns-to-ai-to-organize-and-categorize-your-photos-for-you/}{(TechCrunch)}}.
             \begin{itemize}
-                \item Optimized performance on low-end Android devices through data access (SQLite), SQL query optimization, performance profiling, caching, prefetching, and lazy loading. 
+                \item Designed data models for Photo Stack and implemented core features, including sharing, favoriting, deleting, and unstacking.
+                \item Minimized main gallery jank with SQL optimization, lazy loading, caching, profiling, pagination. 
             \end{itemize}
-        \item Led redesign of Google Photos settings (Material Design 3), significantly enhancing UX and streamlining navigation. Rebuilt core components (developer tools, sharing, privacy, etc.) for improved maintainability and performance.
+        \item Completely rewrote Google Photos settings from Java to Kotlin and Material Design 3, decluttering the settings by 50\%.
+         \underline{\href{https://www.phonearena.com/news/google-photos-redesigned-settings-menu_id147974}{(Article)}}. 
     \end{itemize}}
-
-
 
 \cventry{Jan 2023 -- Jun 2023}{Founder \& Full-Stack Engineer}{StarAI}{San Francisco, CA}{}{
     \begin{itemize}
         \item Founded/led AI startup building autonomous agents cloning celebrity voices/personas (OpenAI, LangChain, Pinecone).
         \item Partnered with celebrity (5M+ followers), growing a dedicated community of 1,000+ members.
         \item Led top engineers (Google, Meta, Forbes 30 Under 30) to develop/scale the AI platform.
-        \item Architected asynchronous platform handling 500K concurrent users, ensuring stability during peak traffic.
+        \item Architected asynchronous platform handling 500K concurrent users with python Asyncio, telegram bot library, Flask.
     \end{itemize}}
 
 \cventry{Sep 2023 -- Apr 2024}{Tech Lead \& AI Engineer}{PeerTalent}{San Francisco, CA}{}{
@@ -65,10 +61,22 @@ Software Engineer specializing in LLM-powered applications with a proven track r
         \item Designed backend APIs, ranking algorithms, and utilized LLMs for resume evaluation.
     \end{itemize}}
 
-\cventry{May 2021 -- Aug 2021}{Big Data Engineer Intern}{Amazon}{Jersey City, NJ}{}{
+\cventry{May 2021 -- Aug 2021}{Data Engineer Intern}{Amazon}{Jersey City, NJ}{}{
     \begin{itemize}
-        \item Revamped data infrastructure for GRC 2.0 (compliance service for 1200+ internal teams), building ETL pipelines (CDK, Glue, Spark, S3) to load 22B+ records into Redshift.
-        \item Developed QuickSight GRC 2.0 Dashboard, unifying 6 microservices and automating reporting, achieving \$800k+ annual savings and 7x faster access to compliance metrics.
+         \item Developed a reporting dashboard, unifying 6 microservices, achieving \$800k+ annual savings and 7x faster access to critical metrics.
+        \item Built ETL pipelines with CDK, Glue, Spark, S3 to load 22B+ records daily into Redshift to power dashboard analytics.
+    \end{itemize}}
+
+\cventry{Mar 2020 -- Aug 2020}{Founder \& Back-end Developer}{Tar Heel Mask Initiative LLC}{Chapel Hill, NC}{}{
+    \begin{itemize}
+        \item Founded a social enterprise e-commerce platform, grossing \$100K in revenue and leading a cross-functional team of seven. 
+        \item Developed backend systems to scrape 40K business contacts and automated Gmail marketing campaign with 19\% opening rate.
+    \end{itemize}}
+
+\cventry{Jan 2020 -- Jul 2020}{NLP Research Intern}{Acta Solutions LLC}{Chapel Hill, NC}{}{
+    \begin{itemize}
+        \item Developed a summarization model using a pre-trained BERT encoder and a Transformer/LSTM decoder.
+        \item Reached ROUGE-1 score of 40 on extractive summarization on CNN/Daily Mail, a dataset with 31k articles.
     \end{itemize}}
 
 \section{Projects}
@@ -81,7 +89,7 @@ Software Engineer specializing in LLM-powered applications with a proven track r
 
 \section{Skills}
 \cvitem{AI/ML}{LLMs, RAG, Agents, PyTorch, Prompt Engineering, Fine-tuning, RLHF, LangChain, Pinecone}
-\cvitem{Mobile/Backend}{AndroidX, Java, Kotlin, Jetpack Compose, MVVM, Coroutine, Python, Nodejs, Flask, Django}
+\cvitem{Android/Backend}{AndroidX, Java, Kotlin, Jetpack Compose, MVVM, Coroutine, Python, Nodejs, Flask, Django}
 \cvitem{Data \& Infrastructure}{SQL, MongoDB, MySQL, Docker, Kubernetes, Azure, AWS, CI/CD}
 
 \section{Education}
