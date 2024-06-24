@@ -36,23 +36,16 @@
         \item Developed "Ask Photos," a multimodal AI agent enabling users to search photos by chatting \underline{\href{https://techcrunch.com/2024/05/14/google-photos-introduces-an-ai-search-feature-ask-photos/}{(TechCrunch)}}.
             \begin{itemize}
                 \item Built responsive, ChatGPT-like streaming interface using Kotlin,  Coroutines, Jetpack Compose, Dagger/Hilt, MVVM. 
+                \item Overhauled Android client's search, delivering relevance-based results using multimodal embeddings, replacing timestamp sorting.
                 \item Collaborated with DeepMind to optimize agent performance through prompt engineering, fine-tuning, and model evaluation.
             \end{itemize}
         \item Led development of "Photo Stack," which groups similar photos and reduces gallery clutter by 33\% for 1B+ users \underline{\href{https://techcrunch.com/2023/11/15/google-photos-turns-to-ai-to-organize-and-categorize-your-photos-for-you/}{(TechCrunch)}}.
             \begin{itemize}
                 \item Designed data models for Photo Stack and implemented core features, including sharing, favoriting, deleting, and unstacking.
-                \item Minimized main gallery jank with SQL optimization, lazy loading, caching, profiling, pagination. 
+                \item Minimized main gallery jank with SQL query optimization, paging, lazy loading, caching, performance profiling. 
             \end{itemize}
         \item Completely rewrote Google Photos settings from Java to Kotlin and Material Design 3, decluttering the settings by 50\%.
          \underline{\href{https://www.phonearena.com/news/google-photos-redesigned-settings-menu_id147974}{(Article)}}. 
-    \end{itemize}}
-
-\cventry{Jan 2023 -- Jun 2023}{Founder \& Full-Stack Engineer}{StarAI}{San Francisco, CA}{}{
-    \begin{itemize}
-        \item Founded/led AI startup building autonomous agents cloning celebrity voices/personas (OpenAI, LangChain, Pinecone).
-        \item Partnered with celebrity (5M+ followers), growing a dedicated community of 1,000+ members.
-        \item Led top engineers (Google, Meta, Forbes 30 Under 30) to develop/scale the AI platform.
-        \item Architected asynchronous platform handling 500K concurrent users with python Asyncio, telegram bot library, Flask.
     \end{itemize}}
 
 \cventry{Sep 2023 -- Apr 2024}{Tech Lead \& AI Engineer}{PeerTalent}{San Francisco, CA}{}{
@@ -61,21 +54,28 @@
         \item Designed backend APIs, ranking algorithms, and utilized LLMs for resume evaluation.
     \end{itemize}}
 
+\cventry{Jan 2023 -- Jun 2023}{Co-Founder \& CTO}{StarAI}{San Francisco, CA}{}{
+    \begin{itemize}
+        \item Founded startup creating autonomous celebrity AI chatbots using OpenAI, LangChain, Pinecone, Text-to-speech(TTS), Telegram.
+        \item Partnered with a Forbes 30 under 30 winner and a 5M+ follower celebrity, growing community to 1,000+ members in 2 months.
+        \item Led team of FAANG engineers to build asynchronous platform (Asyncio, Flask) handling 500K concurrent users.
+\end{itemize}}
+
 \cventry{May 2021 -- Aug 2021}{Data Engineer Intern}{Amazon}{Jersey City, NJ}{}{
     \begin{itemize}
-         \item Developed a reporting dashboard, unifying 6 microservices, achieving \$800k+ annual savings and 7x faster access to critical metrics.
-        \item Built ETL pipelines with CDK, Glue, Spark, S3 to load 22B+ records daily into Redshift to power dashboard analytics.
+         \item Developed compliance dashboards, unifying 6 microservices, achieving \$800k+ annual savings and 7x faster access to critical metrics, enabling real-time decision making for 1200+ internal teams.
+        \item Designed and built ETL data pipelines with CDK, Glue, Spark, S3 to load 22B+ records daily into Redshift to power dashboards.
     \end{itemize}}
 
-\cventry{Mar 2020 -- Aug 2020}{Founder \& Back-end Developer}{Tar Heel Mask Initiative LLC}{Chapel Hill, NC}{}{
+\cventry{Mar 2020 -- Jun 2020}{Co-Founder \& Back-end Developer}{Tar Heel Mask Initiative LLC}{Chapel Hill, NC}{}{
     \begin{itemize}
-        \item Founded a social enterprise e-commerce platform, grossing \$100K in revenue and leading a cross-functional team of seven. 
+        \item Founded an e-commerce platform, grossing \$100K in revenue in 2 months and leading a cross-functional team of 7. 
         \item Developed backend systems to scrape 40K business contacts and automated Gmail marketing campaign with 19\% opening rate.
     \end{itemize}}
 
 \cventry{Jan 2020 -- Jul 2020}{NLP Research Intern}{Acta Solutions LLC}{Chapel Hill, NC}{}{
     \begin{itemize}
-        \item Developed a summarization model using a pre-trained BERT encoder and a Transformer/LSTM decoder.
+        \item Engineered transformer-based models using BERT and PyTorch to summarize and analyze sentiments of 100K+ government surveys.
         \item Reached ROUGE-1 score of 40 on extractive summarization on CNN/Daily Mail, a dataset with 31k articles.
     \end{itemize}}
 
